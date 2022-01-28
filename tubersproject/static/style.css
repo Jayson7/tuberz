@@ -1,0 +1,45 @@
+body {
+    background-color: rgb(29, 25, 25);
+}
+
+.wrappers {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.box-wrap {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.box-wrap h3 {
+    color: blanchedalmond;
+    font-size: 3rem;
+    font-family: monospace;
+    font-weight: 900;
+}
+
+.box-wrap p {
+    color: aliceblue;
+    font-size: 1.3rem;
+}
+
+.box {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+form input {
+    border: 0;
+    outline: none;
+    padding: 10px 150px;
+    border-radius: 50px;
+}
