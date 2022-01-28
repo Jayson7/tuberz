@@ -42,7 +42,7 @@ body {
 form input {
     border: 0;
     outline: none;
-    padding: 15px 150px;
+    padding: 15px 170px;
     border-radius: 50px;
     margin-right: 15px;
 }
@@ -55,7 +55,8 @@ form button {
     border-radius: 5px;
 }
 
-form .small-info {
+.small-info {
     color: white;
     font-family: Helvetica;
+    margin-top: 10px;
 }
