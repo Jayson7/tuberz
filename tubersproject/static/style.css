@@ -18,7 +18,7 @@
 
 input {
     width: 500px;
-    height: 30px;
+    height: 45px;
     outline: none;
     border: 0;
     padding-inline-end: 20px;
@@ -66,4 +66,20 @@ form button:hover {
     height: 150px;
     object-fit: cover;
     object-position: center;
+}
+
+.bodys {
+    text-align: center;
+    font-size: 1.2rem;
+    font-family: "Ubuntu";
+}
+
+.displays button {
+    padding: 10px 30px;
+    font-size: 1.3rem;
+    font-weight: 900;
+    font-family: "Ubuntu";
+    border-radius: 10px;
+    border: none;
+    background-color: cyan;
 }
