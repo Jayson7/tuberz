@@ -22,8 +22,7 @@
         <br />
         <div class="forms">
             <form method="post">
-                <input type="url" placeholder="Youtube url" name="youurl" id="youurl" />
-
+                <input type="url" placeholder="Youtube url" name="link" id="youurl" /> {% csrf_token %}
                 <button type="submit">Search</button>
             </form>
         </div>

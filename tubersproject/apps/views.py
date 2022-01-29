@@ -16,10 +16,11 @@ def Home(request):
  
         # setting video resolution
         stream = video.streams.get_lowest_resolution()
-         
+        print(stream)  
         # downloads video
-        stream.download()
+        # stream.download()
  
         # returning HTML page
-        return render(request, 'youtube.html')
-    return render(request, 'youtube.html')
+        return render(request, 'index.html')
+    
+    return render(request, 'index.html')
