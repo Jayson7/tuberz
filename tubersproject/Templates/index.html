@@ -18,12 +18,25 @@
         <h1>TUBERZ</h1>
     </div>
     <div class="wrappers">
+        <small>Download Youtube videos without stress</small>
+        <br />
         <div class="forms">
             <form method="post">
-                <input type="url" name="youurl" id="youurl" />
+                <input type="url" placeholder="Youtube url" name="youurl" id="youurl" />
 
-                <button type="submit"></button>
+                <button type="submit">Search</button>
             </form>
+        </div>
+
+        <div class="displays">
+            <div class="cards">
+                <img src="{% static 'images/1.png' %}" alt="none" srcset="" />
+                <div class="bodys">
+                    <h4>Title</h4>
+                </div>
+            </div>
+
+            <button class="download">Download</button>
         </div>
     </div>
 </body>
