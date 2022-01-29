@@ -6,6 +6,7 @@ from pytube import *
 # Create your views here.
 
 
+
 def Home(request):
     # checking whether request.method is post or not
     context = {}
@@ -22,9 +23,10 @@ def Home(request):
         # highest resolution
         highest_resolution = video.streams.get_highest_resolution()
         highest_resolution_download = highest_resolution.download()
-        # setting video resolution
-        stream = video.streams.get_lowest_resolution()
-        print(stream)  
+        # smallest resolution
+        smallest_resolution = video.streams.get_lowest_resolution()
+        smallest_resolution_download = smallest_resolution.download()
+        print(highest_resolution)  
         # downloads video
         # stream.download()
  

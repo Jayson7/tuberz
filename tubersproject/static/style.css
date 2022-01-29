@@ -12,7 +12,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 70vh;
+    height: 80vh;
     width: 100%;
 }
 
@@ -26,6 +26,13 @@ input {
     font-size: 1rem;
     border-radius: 20px;
     background-color: azure;
+}
+
+form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
 }
 
 form button {
@@ -82,4 +89,20 @@ form button:hover {
     border-radius: 10px;
     border: none;
     background-color: cyan;
+}
+
+.download-small {
+    margin-bottom: 2vh;
+}
+
+@media screen and (max-width: 655px) {
+    form button {
+        margin-top: 1vh;
+    }
+    form input {
+        width: 100%;
+    }
+    .wrappers {
+        height: 100%;
+    }
 }
