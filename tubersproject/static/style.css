@@ -30,3 +30,26 @@ body {
     align-items: center;
     justify-content: space-around;
 }
+
+.box1,
+.box2 {
+    width: 200px;
+    height: 200px;
+    background-color: rgb(255, 253, 253);
+    border-radius: 5px;
+    margin: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+h4 {
+    font-size: 1.2rem;
+}
+
+.box1 button,
+.box2 button {
+    padding: 10px 30px;
+    border-radius: 4px;
+}
