@@ -1,4 +1,9 @@
 body {
+    overflow: hidden;
+    font-family: monospace;
+}
+
+.container-wrapps {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -11,6 +16,17 @@ body {
     height: 500px;
     display: flex;
     flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.menu {
+    text-align: center;
+}
+
+.boxes {
+    display: flex;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: space-around;
 }
