@@ -13,23 +13,28 @@ body {
 header {
     background-color: rgb(28, 27, 27);
     height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 nav {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100%;
+    justify-content: center !important;
+    align-items: center !important;
+    height: 100% !important;
     width: 100%;
 }
 
 nav ul {
     display: flex;
-    align-items: center;
-    justify-content: space-evenly;
+    align-items: center !important;
+    justify-content: space-evenly !important;
     width: 40%;
     /* flex-wrap: wrap; */
-    height: 100%;
+    /* background-color: aqua; */
+    margin-top: 15px;
+    height: 100% !important;
 }
 
 ul li {
@@ -59,12 +64,13 @@ a:hover {
 
 @media screen and (max-width: 400px) {
     header {
-        height: 90px;
+        height: 100px !important;
     }
     nav ul {
         width: 100%;
-        justify-content: space-around;
-        flex-direction: column;
+        height: 100% !important;
+        justify-content: space-around !important;
+        flex-direction: column !important;
     }
 }
 
