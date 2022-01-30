@@ -43,10 +43,12 @@ def Small(request):
             # stream.download()
     
             # returning HTML page
+            messages.success(request, 'Your file is currently downloading.', extra_tags='alert')
             
             return render(request, 'small.html')
 
     except:
+        messages.warning(request, 'Incorrect url.')
         redirect ('/')
     
     return render(request, 'small.html')
@@ -72,10 +74,10 @@ def Large(request):
         
     
             # returning HTML page
-            messages.success(request, 'Your file is currently downloading', extra_tags='alert')
+            messages.success(request, 'Your file is currently downloading.', extra_tags='alert')
             return render(request, 'large.html')
 
     except:
-        messages.warning(request, 'Please correct the error below.')
+        messages.warning(request, 'Incorrect url.')
         redirect ('/')
     return render(request, 'large.html')

@@ -36,9 +36,16 @@ ul li {
     list-style-type: none;
 }
 
-li a {
+a {
     color: beige;
-    text-decoration: none;
+    text-decoration: none !important;
+    font-weight: 900;
+    font-size: 1rem;
+}
+
+a:hover {
+    color: beige;
+    text-decoration: none !important;
     font-weight: 900;
     font-size: 1rem;
 }
@@ -122,8 +129,10 @@ input {
     padding-inline-end: 10px;
     padding-inline-start: 10px;
     margin-bottom: 20px;
-    padding: 0 100%;
     border-radius: 10px;
+    font-size: 1.3rem !important;
+    background-color: transparent !important;
+    color: black !important;
     outline: none;
     border: 0.7px solid;
 }
