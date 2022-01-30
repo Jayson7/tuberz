@@ -7,7 +7,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 90vh;
+    height: 85vh;
 }
 
 .home-wrapps {
@@ -68,7 +68,7 @@ h4 {
     text-decoration: none;
 }
 
-foooter {
+footer {
     text-align: center;
     color: black;
 }

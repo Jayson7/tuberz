@@ -5,40 +5,42 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="keywords" content="" />
-    <link rel="stylesheet" href="{% static 'style.css' %}" />
+    <link rel="stylesheet" href="{% static 'high.css' %}" />
     <meta http-equiv="X-UA-Compatible" content="IE=7" />
     <meta name="description" content="" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Tubers</title>
+    <title>Tubers - Low Resolution Download</title>
 </head>
+<header>
+    <nav>
+        <ul>
+            <li><a href="{% url 'home' %}"> HOME </a></li>
+            <li><a href="{% url 'large' %}"> HIGH RESOLUTION </a></li>
+            <li><a href="{% url 'small' %}"> LOW RESOLUTION </a></li>
+        </ul>
+    </nav>
+</header>
 
 <body>
-    <div class="header">
-        <h1>TUBERZ</h1>
-    </div>
-    <div class="wrappers">
-        <small>Download Youtube videos without stress</small>
-        <br />
-        <div class="forms">
-            <form method="post">
-                <input type="url" placeholder="Youtube url" name="link" id="youurl" /> {% csrf_token %}
-                <button type="submit">Search</button>
-            </form>
-        </div>
-
-        <div class="displays">
-            <div class="cards">
-                <img src="{% static 'images/1.png' %}" alt="none" srcset="" />
-                <div class="bodys">
-                    <h4>Title</h4>
-                </div>
+    <div class="container-wrapps">
+        <div class="home-wrapps">
+            <div class="menu">
+                <h1>TUBERZ</h1>
             </div>
-
-            <button class="download-small">Low Resolution</button>
-            <button class="download-high">High Resolution</button>
+            {% csrf_token %}
+            <p>Place in your Youtube link and download in low resolution</p>
+            <div class="forms-wrappers">
+                <form method="POST">
+                    <input type="url" name="link" id="url" />
+                    <button>Download</button>
+                </form>
+            </div>
         </div>
     </div>
 </body>
+<footer>
+    <p>©️ Jayson 2022</p>
+</footer>
 
 </html>
