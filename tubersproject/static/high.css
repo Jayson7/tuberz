@@ -1,5 +1,5 @@
 body {
-    overflow: hidden;
+    overflow-x: hidden;
     font-family: monospace;
 }
 
@@ -20,6 +20,7 @@ nav {
     justify-content: center;
     align-items: center;
     height: 100%;
+    width: 100%;
 }
 
 nav ul {
@@ -27,11 +28,37 @@ nav ul {
     align-items: center;
     justify-content: space-evenly;
     width: 40%;
+    /* flex-wrap: wrap; */
     height: 100%;
 }
 
 ul li {
     list-style-type: none;
+}
+
+li a {
+    color: beige;
+    text-decoration: none;
+    font-weight: 900;
+    font-size: 1rem;
+}
+
+@media screen and (max-width: 800px) {
+    nav ul {
+        width: 80%;
+        justify-content: space-around;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    header {
+        height: 90px;
+    }
+    nav ul {
+        width: 100%;
+        justify-content: space-around;
+        flex-direction: column;
+    }
 }
 
 
@@ -64,6 +91,11 @@ ul li {
 
 h4 {
     font-size: 1.2rem;
+}
+
+p {
+    padding: 0 10px;
+    text-align: center;
 }
 
 form button {
@@ -104,4 +136,9 @@ input {
         padding: 0;
         width: 80vw;
     }
+}
+
+foooter {
+    text-align: center;
+    color: black;
 }
