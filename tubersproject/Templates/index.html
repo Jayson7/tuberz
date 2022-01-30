@@ -12,22 +12,35 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Tubers - Home</title>
 </head>
+<header>
+    <nav>
+        <ul>
+            <li><a href="{% url 'home' %}"> HOME </a></li>
+            <li><a href="{% url 'large' %}"> HIGH RESOLUTION </a></li>
+            <li><a href="{% url 'small' %}"> LOW RESOLUTION </a></li>
+        </ul>
+    </nav>
+</header>
 
 <body>
     <div class="container-wrapps">
         <div class="home-wrapps">
             <div class="menu">
                 <h1>TUBERZ</h1>
-                <p>Choose a resolution to download</p>
             </div>
             <div class="boxes">
-                <div class="box1">
-                    <h4>High resolution</h4>
-                    <a href="{% url 'large' %}"><button>Select</button> </a>
+                <div class="d">
+                    <p>Choose a resolution to download</p>
                 </div>
-                <div class="box2">
-                    <h4>Low resolution</h4>
-                    <a href="{% url 'small' %}"><button>Select</button> </a>
+                <div class="boxs">
+                    <div class="box1">
+                        <h4>High resolution</h4>
+                        <a href="{% url 'large' %}"><button>Select</button> </a>
+                    </div>
+                    <div class="box2">
+                        <h4>Low resolution</h4>
+                        <a href="{% url 'small' %}"><button>Select</button> </a>
+                    </div>
                 </div>
             </div>
         </div>

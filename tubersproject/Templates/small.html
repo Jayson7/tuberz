@@ -28,11 +28,11 @@
             <div class="menu">
                 <h1>TUBERZ</h1>
             </div>
-            {% csrf_token %}
-            <p>Place in your Youtube link and download in low resolution</p>
+            <p>Place in your Youtube link to download in low resolution</p>
             <div class="forms-wrappers">
                 <form method="POST">
-                    <input type="url" name="link" id="url" />
+                    {% csrf_token %}
+                    <input type="url" required name="link" id="url" />
                     <button>Download</button>
                 </form>
             </div>
