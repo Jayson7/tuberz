@@ -130,13 +130,15 @@ form {
 }
 
 input {
-    width: 100%;
+    width: 50vw !important;
     height: 50px;
-    padding-inline-end: 10px;
-    padding-inline-start: 10px;
+    /* padding-inline-end: 10px; */
+    padding-inline-start: 10px !important;
     margin-bottom: 20px;
     border-radius: 10px;
-    font-size: 1.3rem !important;
+    font-size: 1rem !important;
+    padding-inline-start: 10px;
+    padding-inline-end: 10px;
     background-color: transparent !important;
     color: black !important;
     outline: none;
@@ -149,7 +151,7 @@ input {
     }
     input {
         padding: 0;
-        width: 80vw;
+        width: 80vw !important;
     }
 }
 

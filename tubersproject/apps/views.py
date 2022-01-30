@@ -43,7 +43,7 @@ def Small(request):
             # stream.download()
     
             # returning HTML page
-            messages.success(request, 'Your file is currently downloading.', extra_tags='alert')
+            messages.success(request, 'Your file is done downloading.', extra_tags='alert')
             
             return render(request, 'small.html')
 
@@ -74,7 +74,7 @@ def Large(request):
         
     
             # returning HTML page
-            messages.success(request, 'Your file is currently downloading.', extra_tags='alert')
+            messages.success(request, 'Your file is done downloading.', extra_tags='alert')
             return render(request, 'large.html')
 
     except:
